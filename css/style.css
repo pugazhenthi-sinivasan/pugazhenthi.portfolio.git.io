@@ -50,7 +50,7 @@ body h2:hover{
 }
 
 .main1:hover{
-  color: darkturquoise;
+  color: rgb(45, 166, 218);
 }
 
 /* I AM PUGAZHENTHI.S */
@@ -62,7 +62,7 @@ body h2:hover{
 }
 
 .main2:hover{
-  color:rgb(130, 138, 218);
+  color:rgb(50, 117, 197);
 }
 
 
@@ -90,7 +90,7 @@ body h2:hover{
 }
 
 
-/* hover */
+/* img hover */
 .header a:hover {
    color: rgb(21, 18, 218);
 }
@@ -123,7 +123,6 @@ body h2:hover{
    top: 10%;
 }
 
-.about1 h2 :hover{}
 
 .about1 h3 {
    padding-left: 7%;
@@ -140,7 +139,7 @@ body h2:hover{
 
 /* skill */
 
-#skill {
+#skills {
    height: 100vh;
    width: 100vw;
 }
@@ -208,15 +207,13 @@ h2 {
 
 
 
+/* footer */
 .footer{
    background-color: #3275c5;
-   padding: 20px 10%;
+   padding: 20px ;
    text-align: center;
 }
 
-.footer .icons{
-   margin-bottom: 20px;
-}
 
 .footer .icons a{
    display: inline-block;
@@ -228,7 +225,6 @@ h2 {
    color: #fff;
    line-height: 40px;
    font-size: 20px;
-   transition: 0.3s ease;
 }
 
 .footer .icons a:hover{
