@@ -12,7 +12,9 @@
 body {
    overflow-x: hidden;
    background-color: #d9d9d9;
+   font-family: sans-serif;
 }
+/* #4c4c6d */
 
 /* about, my hobbies, skill,  contact */
 body h2:hover {
@@ -39,7 +41,7 @@ body h2:hover {
    align-content: center;
    text-decoration: none;
    margin-right: 40px;
-
+   transition: all 0.8s;
 }
 
 /*  hover */
@@ -101,53 +103,245 @@ body h2:hover {
 
 
 
+/* <!--------about----------> */
 
-/* about page */
-.containerabout {
+#about{
    height: 100vh;
    width: 100vw;
+   display: grid;
+   grid-template-rows: 10% 90%;
 }
 
-#about img {
-   position: absolute;
-   right: 0%;
-   width: 530px;
-   height: 880px;
+.about1{
+   height: 10vh;
+   width: 100vw;
+   margin-top: 10vh;
+   font-size: 30px;
+   color: #3275c5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
+.aboutContent{
+   margin-top: 10vh;
+   height: 80vh;
+   width: 100vw;
+   display:grid;
+   grid-template-columns: 60% 40%;
+
+}
+
+.aboutText{
+   display: grid;
+   grid-template-rows: 50% 50%;
+}
+
+.aboutTextH3{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+.aboutText p{
+   font-size: 30px;
+   margin-left: 30px;
+}
+
+.bigPicture{
+   border-radius: 20%;
+   position: absolute;
+   top: 0;
+   right: 0%;
+   width: 500px;
+   height: 700px;
+}
+
+.education{
+   font-size: 40px;
+   color: #3275c5;
+   margin-left: 30px;
+}
+
+.educationDiv{
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   flex-direction: column;
+}
+
+.educationDiv ul li{
+   font-size: 30px;
+   margin-left: 100px;
+   line-height: 40px;
+
+
+} 
+
+.pictureDiv{
+   position: relative;
 }
 
 .about1 h2 {
    position: relative;
    top: 10%;
+   /* font-size: 1.5rem; */
+   font-size: 60px;
+   font-weight: 600;
+   color: #5DB9EE;
+
 }
 
 
 .about1 h3 {
    padding-left: 7%;
    padding-top: 1%;
-   font-size: 2em;
+   font-size: 5em;
+   
 }
 
 
+/* <!--------skill--------> */
+
+.edu-container{
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+}
+.l-container{
+   background:#262525;
+   width: 70%;
+   padding-left: 3rem;
+}
+.r-container{
+   background: linear-gradient(-45deg, #3877FF, #262525 70%) ;
+   width: 30%;
+}
+.Education {
+   margin-left: 4rem;
+}
+.Education .Edu-2{
+   font-size: 60px;
+   color: #5DB9EE;
+   position: relative;
+   top: 120px;
+}
 
 
+.box-01{
+   border: solid #5DB9EE 2px;
+   padding: 5%;
+   border-radius: 6rem;
+   width: 90%;
+   padding-left: 6rem;
+}
+.box-01 span{
+   color: #5DB9EE;
+}
+.box-02{
+   border: solid #5DB9EE 2px;
+   padding: 5%;
+   border-radius: 6rem;
+   width: 90%;
+   padding-left: 6rem;
+   margin-top: 1rem;
+}
+.box-02 span{
+   color: #5DB9EE;
+}
+.box-school{
+   font-size: 30px;
+   color: white;
+   position: relative;
+   top: 160px;
+   margin-left: 5rem;
+   margin-top: 3rem;
+}
+.box-school{
+   margin-top: 3rem;
+}
+.education-image{
+   margin-top: 185px;
+   margin-left: 56px;
+   border-radius: 50%;
+}
+/* -------SKILL SECTION START--------- */
+.skill-container{
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+}
+.le-container{
+   /* background:#262525; */
+   width: 100%;
+   padding-left: 3rem;
+}
+.le-container .Skills{
+   font-size: 60px;
+   color:#3275c5;
+   position: relative;
+   top: 80px;
+}
+.grid{
+   position: relative;
+   top: 130px;
+   color: #000000;
+   display: flex !important;
+   flex-wrap: wrap;
+   gap: 5rem;
+   justify-content: center;
+}
+.grid>div{
+   width: 35%;
+}
+.grid .skillIcon{
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+}
+.grid h4{
+   display: flex;
+   gap: 7px;
+   align-items: center;
+}
 
 
+/* <!--------Els----------> */
 
+.ELSHeading h2 {
+    font-size: 60px;
+   color: #5DB9EE;
+   position: relative;
+   top: 120px;
+}
 
-/* skill */
-
-#skills {
-   height: 100vh;
+.ContainerCardComp{
+   height: 90vh;
    width: 100vw;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
+.ELSskills{
+   height: 300px;
+   width: 300px;
+   background-color:black;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
 
-h2 {
-   padding-left: 4%;
-   padding-top: 10%;
-   color: #3275c5;
+.RankCardComp{
+   font-size: 50px;
+   color: gold;
+}
+
+.TitreCardComp{
    font-size: 40px;
+   color:white;
 }
 
 .img1 img {
@@ -185,35 +379,115 @@ h2 {
    font-size: 1.5em
 }
 
-
-
-
-
-/* contact */
-.cotainercontact {
-   height: 70vh;
+#Els{
+   height: 100vh;
    width: 100vw;
+   display: grid;
+   grid-template-rows: 10% 90%;
+}
 
+.ELSHeading{
+   height: 10vh;
+   width: 100vw;
+   text-align: center;
+   align-content: center;
 }
 
 
-#contact h3 {
-   padding-left: 8%;
-   padding-top: 3%;
-   font-size: 1.5em;
+/* ------contact--------- */
+
+.contact {
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 40px 30px;
+}
+
+.c-header {
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.c-header h2 {
+   /* width: 100%; */
+   margin: auto;
+   text-align: center;
+   font-size: 60px;
+   color:#5DB9EE;
+   margin-bottom:80px;
+ 
+}
+
+.c-header p {
+   font-size: 18px;
+   color: #666;
 }
 
 
+form {
+   background-color: #171721;
+   padding: 70px;
+   border-radius: 15px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-/* footer */
+.input-box h2 {
+   font-size: 30px;
+   color: #fefefe;
+   margin-bottom: 20px;
+}
+
+input, textarea {
+   background-color: transparent;
+   color: #f2f3f4;
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 15px;
+   border: 1px solid #c3c4c5;
+   border-radius: 10px;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+textarea {
+   resize: vertical;
+   min-height: 150px;
+}
+
+.contact button {
+   background-image: linear-gradient(to right top, #db00ff, #c900ff, #b500ff, #a000ff, #8800ff);
+   color: rgb(228, 221, 221);
+   border: none;
+   padding: 12px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   width: 100%;
+   border-radius: 10px;
+   text-decoration: none; 
+}
+
+
+/* <!--------footer----------> */
+
 .footer {
+   display: flex;
    background-color: #3275c5;
    padding: 20px;
    text-align: center;
+   align-content: center;
+   justify-content: center;
+}
+
+.footer a{ 
+   
+margin-left: 60px;
 }
 
 
-.footer .icons a {
+
+
+
+/* .footer .icons a {
    display: inline-block;
    width: 40px;
    height: 40px;
@@ -223,9 +497,11 @@ h2 {
    color: #fff;
    line-height: 40px;
    font-size: 20px;
-}
+} */
 
-.footer .icons a:hover {
+/* .footer .icons a:hover {
    background-color: rgb(173, 70, 237);
    color: rgb(23, 23, 23);
-}
+} */
+
+

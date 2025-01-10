@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 
 <body>
@@ -17,76 +21,268 @@
             <a href="#home">HOME</a>
             <a href="#about">ABOUT</a>
             <a href="#skills">SKILLS</a>
+            <a href="#Els">ENGLISH</a>
             <a href="#contact">CONTACT</a>
         </nav>
+
         <section id="home">
             <main class="home1">
-                <img src="./assets/images/home-img.png" width="500" height="500" alt="" style="float:right;">
-                <h1 class="main1">HEY! </h1>
+                <div data-aos="fade-down">
+                    <img src="./assets/images/home-img.png" width="500" height="500" alt="" style="float:right;">
+                </div>
+                <h1 class="main1">HEY!</h1>
                 <h1 class="main2">I AM PUGAZHENTHI. S</h1>
                 <button class="main4">Frontend Developer</button>
+
             </main>
         </section>
     </div>
 
+    <!----------ABOUT---------->
+    <section id="about">
+        <div class="about1">
+            <h2 style="   font-size: 60px;
+            font-weight: 600;
+            color: #5DB9EE;">ABOUT</h2>
+        </div>
 
+        <div class="aboutContent">
+            <div class="aboutText">
+                <div class="aboutTextH3">
+                    <p >My name is Pugazhenthi, and I hail from Trichy. I am deeply committed to being a lifelong
+                        learner. constantly seeking opportunities to grow and develop my skills.<br>
+                        <br>
+                        I excel in chess, have honed my talents as a professional artist, and have achieved recognition
+                        as a zonal-level hockey player.
+                    </p>
+                </div>
 
-
-    <div class="containerabout">
-        <section id="about">
-            <div class="about1">
-                <img src="./assets/images/about-img.jpeg" alt="">
-                <h2>ABOUT</h2>
-                <h3>My name is Pugazhenthi. and I am from Trichy. <br> I possess moderate communication skills.<br> <br>
-                    I am strong in chess, a professional artist, <br> and a zonal-level hockey player.
-                    <h2 class="education">MY HOBBIES</h2>
-                    <h3 class="education1">Drawing <br> Chess<br> Running <br>Video Editing <br>Content Creation</h3>
-        </section>
-    </div>
-
-
-
-    <section id="skills">
-        <h2>SKILLS</h2>
-        <div class="img1">
-            <div class="skillimg">
-                <img src="./assets/images/skills-html-img.png" alt="">
-                <p>HTML5 65%</p>
+                <div class="educationDiv">
+                    <h2 class="education" style=" font-size: 50px;
+                    font-weight: 600;
+                    color: #5DB9EE;">MY HOBBIES</h2>
+                    <ul>
+                        <li>Drawing </li>
+                        <li>Chess</li>
+                        <li> Running</li>
+                        <li>Video Editing</li>
+                        <li>Content Creation</li>
+                    </ul>
+                </div>
             </div>
-            <div class="skillimg">
-                <img src="./assets/images/skills-css -img.png" alt="">
-                <p>CSS 50%</p>
+            <div class="pictureDiv" data-aos="zoom-in">
+                <img src="./assets/images/about-img.jpeg" alt="" class="bigPicture">
             </div>
-            <div class="skillimg">
-                <img src="./assets/images/skills-JavaScript -img.png" alt="">
-                <P>JAVASCRIPT 5%</P>
+        </div>
+    </section>
+
+    <section id="skills" >
+            <div class="skill-container" id="skill">
+                <div class="le-container" >
+                    <div class="ski-234">
+                        <h2 class="Skills" style=" font-size: 50px;
+                        font-weight: 500;
+                        color: #5DB9EE;"> SKILLS</h2>
+                    </div>
+
+                    <div class="grid">
+                        <div class="problem">
+                            <h4 class="Prob"><img src="./assets/images/html5.png" alt="" class="skillIcon"><div class="skill_"></div><pre>HTML                       Intermediate<pre></h4>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-blue w3-round-xlarge" style="width:65%">65%</div>
+                            </div>
+              <p style="display: flex;justify-content: space-around;"><span>Beginner</span><span>Intermediate</span><span>Expert</span></p>
+                        </div>
+                        <div class="problem">
+                            <h4 class="Prob"><img src="./assets/images/css3.png" alt="" class="skillIcon"><div class="skill_"></div><pre>CSS                      Intermediate<pre></h4>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-blue w3-round-xlarge" style="width:55%">55%</div>
+                            </div>
+                            <p style="display: flex;justify-content: space-around;"><span>Beginner</span><span>Intermediate</span><span>Expert</span></p>
+                        </div>
+                        <div class="problem">
+                            <h4 class="Prob"><img src="./assets/images/python.png" alt="" class="skillIcon"><div class="skill_"></div><pre>Python                         Intermediate<pre></h4>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-blue w3-round-xlarge" style="width:40%">40%</div>
+                            </div>
+                            <p style="display: flex;justify-content: space-around;"><span>Beginner</span><span>Intermediate</span><span>Intermediate</span></p>
+                        </div>
+                        <div class="problem">
+                            <h4 class="Prob"><img src="./assets/images/javascript.png" alt="" class="skillIcon"><div class="skill_"></div><pre>Java Script                Beginner<pre></h4>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-blue w3-round-xlarge" style="width:40%">40%</div>
+                            </div>
+                            <p style="display: flex;justify-content: space-around;"><span>Beginner</span><span>Intermediate</span><span>Expert</span></p>
+                        </div>
+
+                        <div class="problem">
+                            <h4 class="Prob"><img src="./assets/images/selenium.png" alt="" class="skillIcon"><div class="skill_"></div><pre>Selenium                       Intermediate</pre></h4>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-blue w3-round-xlarge" style="width:50%">50%</div>
+                            </div>
+                         <p style="display: flex;justify-content: space-around;"><span>Beginner</span><span>Intermediate</span><span>Expert</span></p>
+                        </div>
+
+                        <div class="problem">
+                            <h4 class="Prob"><img src="./assets/images/sql.png" alt="" class="skillIcon"><div class="skill_"></div><pre>My SQL                          Beginner</pre></h4>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-blue w3-round-xlarge" style="width:40%">40%</div>
+                            </div>
+                            <p style="display: flex;justify-content: space-around;"><span>Beginner</span><span>Intermediate</span><span>Expert</span></p>
+                        </div>
+            
+                    </div>
+              </div>
+        </div>
+        
+    
+        <!-- <div class="skills-header">
+            <h1>Skills</h1>
+            <p>Here are some of my skills on which I have learnt.</p>
+        </div>
+        <div class="skills-container">
+           
+            <div class="skills-section-1" data-aos="fade-left">
+                <div>
+                    <h2 class="s1-h2">Frontend</h2>
+                </div>
+                <div class="skills">
+
+                    <div class="skill">
+                        <img src="./assets/images/html5.png">
+                        <h4>HTML 80%</h4>
+                    </div>
+
+                    <div class="skill">
+                        <img src="./assets/images/skills-css -img.png">
+                        <h4>CSS 70%</h4>
+                    </div>
+
+                    <div class="skill">
+                        <img src="./assets/images/javascript.png">
+                        <h4>Javascript 30%</h4>
+                    </div>
+
+                    <div class="skill">
+                        <img src="./assets/images/sql.png">
+                        <h4>Sql 10%</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <div class="skills-section-2" data-aos="fade-right">
+                <div>
+                    <h2 class="s2-h2">Others</h2>
+                </div>
+                <div class="skills">
+
+                    <div class="skill">
+                        <img src="./assets/images/git.png">
+                        <h4>Github 30%</h4>
+                    </div>
+
+                    <div class="skill">
+                        <img src="./assets/images/selenium.png">
+                        <h4>Selenium 40%</h4>
+                    </div>
+
+                    <div class="skill">
+                        <img src="./assets/images/python.png">
+                        <h4>Python 20%</h4>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </section>
+
+
+    <!-- ----------------------ELS---------------------------- -->
+    <section id="Els">
+        <div class="ELSHeading">
+            <h2 style="   font-size: 60px;
+            font-weight: 600;
+            color: #5DB9EE;"> ENGLISH</h2>
+        </div>
+        <div class="ContainerCardComp" data-aos="zoom-in">
+            <div class="ELSskills">
+                <div class="TitreCardComp">Reading</div>
+                <div class="TitreCardComp">Beginner</div>
+                <div class="RankCardComp">★★☆☆☆</div>
+            </div>
+            <div class="ELSskills">
+                <div class="TitreCardComp">Speaking</div>
+                <div class="TitreCardComp">Beginner</div>
+                <div class="RankCardComp">★★☆☆☆</div>
+            </div>
+            <div class="ELSskills">
+                <div class="TitreCardComp">Writing</div>
+                <div class="TitreCardComp">Beginner</div>
+                <div class="RankCardComp">★★☆☆☆</div>
+            </div>
+            <div class="ELSskills">
+                <div class="TitreCardComp">Listening</div>
+                <div class="TitreCardComp">Beginner</div>
+                <div class="RankCardComp">★★☆☆☆</div>
             </div>
         </div>
     </section>
 
 
 
-    <section id="contact">
-        <div class="cotainercontact">
-            <h2>CONTACT ME</h2>
-            <h3>Email : pugal9988@gmail.com</h3>
-            <h3>LinkedIn: pugazhenthi sinivasan</h3>
-            <h3>Address : 8/12 Chennai Anna Nagar</h3>
+    <!-- ----------------------CONTACT SECTION---------------------------- -->
+
+    <section id="contact" class="contact">
+
+        <div class="c-header">
+            <h2 style="font-size: 60px;
+            font-weight: 600;
+            color: #5DB9EE;">CONTACT</h2>
+            <p>Feel free to reach out to me for any questions or opportunities!</p>
         </div>
-        <footer class="footer">
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/pugazhenthi-sinivasan-8667ba285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                        class="fa-brands fa-linkedin"></i></a>
 
-                <a href="https://link.chess.com/play/ci3Qxd"><i class="fa-solid fa-chess"></i></a>
+        <form action="https://api.web3forms.com/submit" method="POST">
 
-                <a href=""><i class="fa-solid fa-house"></i></a>
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
-            </div>
-        </footer>
+            <input type="text" name="name" required placeholder="Name">
+            <input type="email" name="email" required placeholder="Email">
+            <textarea name="message" required placeholder="Message"></textarea>
+
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+
+            <button type="submit">Submit Form</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ----------------------FOOTER---------------------------- -->
+
+    <footer class="footer">
+        <!-- <h1>PUGAZHENTHI</h1> -->
+        <div class="foter image">
+            <a
+                href="https://www.linkedin.com/in/pugazhenthi-sinivasan-8667ba285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                    class="fa-brands fa-linkedin"></i></a>
         </div>
+        <div class="foter image">
+            <a href="https://link.chess.com/play/ci3Qxd"><i class="fa-solid fa-chess"></i></a>
+        </div>
+        <div class="foter image">
+            <a href=""><i class="fa-solid fa-house"></i></a>
+        </div>
+    </footer>
+    </div>
     </section>
 
 </body>
+<script>
+    AOS.init();
+</script>
 
 </html>
