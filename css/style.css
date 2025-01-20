@@ -30,8 +30,8 @@ body h2:hover {
    justify-content: flex-end;
    position: fixed;
    width: 100vw;
-   /* font-size: 130%; */
    font-size: x-large;
+   /* font-weight: 600; */
    gap: 20px;
 }
 
@@ -52,7 +52,8 @@ body h2:hover {
 
 /* h1 HEY */
 .main1 {
-   font-size: 250%;
+   font-size: 300%;
+   font-weight: 700;
    position: absolute;
    top: 40%;
    left: 20%;
@@ -64,7 +65,8 @@ body h2:hover {
 
 /* I AM PUGAZHENTHI.S */
 .main2 {
-   font-size: 250%;
+   font-size: 300%;
+   font-weight: 700;
    position: absolute;
    top: 47%;
    left: 20%;
@@ -159,7 +161,7 @@ body h2:hover {
 .education{
    font-size: 40px;
    color: #3275c5;
-   margin-left: 30px;
+   margin-left: 38px;
 }
 
 .educationDiv{
@@ -343,41 +345,17 @@ body h2:hover {
    font-size: 40px;
    color:white;
 }
-
+/* 
 .img1 img {
    width: 300px;
    height: 300px;
-}
+} */
 
 .skillimg {
    border-radius: 10px;
 
 }
 
-.img1 {
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   text-align: center;
-   margin: 40px;
-}
-
-.skillimg {
-   background-color: rgb(247, 243, 243);
-   border-radius: 20px;
-   /* width: fit-content; */
-   padding: 30px;
-   text-align: center;
-}
-
-.skillimg:hover {
-   background-color: rgb(99, 121, 168);
-   border: 4px solid rgb(21, 177, 215);
-}
-
-.img1 p {
-   font-size: 1.5em
-}
 
 #Els{
    height: 100vh;
@@ -393,6 +371,17 @@ body h2:hover {
    align-content: center;
 }
 
+
+.ELSskills{
+   height: 300px;
+   width: 300px;
+   background-color:#3275c5;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
 
 /* ------contact--------- */
 
